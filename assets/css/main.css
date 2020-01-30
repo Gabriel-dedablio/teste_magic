@@ -4,23 +4,20 @@
     opacity: 0;
   }
   to {
-    top: 25%;
+    top: 7%;
     opacity: 1;
   }
 }
-.x-40 {
+body .x-40 {
   width: 40%;
 }
-
-.x-55 {
+body .x-55 {
   width: 55%;
 }
-
-.x-100 {
+body .x-100 {
   width: 100%;
 }
-
-header .container {
+body header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,23 +31,23 @@ header .container {
   padding: 5px 0px;
   border-radius: 50px;
 }
-header .container .collapse {
+body header .container .navbar-collapse {
   width: 40%;
 }
-header .container .collapse ul {
+body header .container .navbar-collapse ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0;
 }
-header .container .collapse ul li a {
+body header .container .navbar-collapse ul li a {
   font-family: "Montserrat";
   font-weight: 500;
   color: white;
   cursor: pointer;
   position: relative;
 }
-header .container .collapse ul li ::before {
+body header .container .navbar-collapse ul li ::before {
   content: "";
   width: 3px;
   height: 0;
@@ -62,7 +59,7 @@ header .container .collapse ul li ::before {
   transition: 0.5s;
   transform: translate(-50%, 0);
 }
-header .container .collapse ul li ::after {
+body header .container .navbar-collapse ul li ::after {
   content: "";
   width: 3px;
   right: -14px;
@@ -73,50 +70,50 @@ header .container .collapse ul li ::after {
   transform: translate(50%, 0);
   transition: 0.5s;
 }
-header .container .collapse ul li :hover::before {
+body header .container .navbar-collapse ul li :hover::before {
   height: 150%;
   bottom: -5px;
   transition: 0.5s;
 }
-header .container .collapse ul li :hover::after {
+body header .container .navbar-collapse ul li :hover::after {
   height: 150%;
   top: -6px;
   transition: 0.5s;
 }
-header .container .redes-social {
+body header .container .redes-social {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .container .redes-social a {
+body header .container .redes-social a {
   border-radius: 50%;
   border: 1px solid white;
   margin-left: 10px;
 }
-header .container .redes-social a img {
+body header .container .redes-social a img {
   width: 30px;
   height: 30px;
   padding: 6px;
 }
-header .container .redes-social a:hover {
+body header .container .redes-social a:hover {
   background-color: #0d8fff96;
   border-radius: 50%;
 }
-header .container ::before {
+body header .container ::before {
   display: none;
 }
-
-.home {
+body .home {
   height: auto;
 }
-.home .banner-slick .content {
+body .home .banner-slick .content {
   height: 80vh;
+  min-height: 440px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.home .banner-slick .content .banner {
+body .home .banner-slick .content .banner {
   position: absolute;
   width: 100%;
   z-index: 1;
@@ -125,7 +122,7 @@ header .container ::before {
   height: 100%;
   object-fit: cover;
 }
-.home .banner-slick .content h1, .home .banner-slick .content p {
+body .home .banner-slick .content h1, body .home .banner-slick .content p {
   font-family: "Montserrat";
   color: white;
   z-index: 99;
@@ -133,38 +130,42 @@ header .container ::before {
   position: absolute;
   top: -100px;
 }
-.home .banner-slick .content h1 {
+body .home .banner-slick .content h1 {
   font-size: 80px;
   font-weight: bold;
   text-shadow: 1px 3px 7px #00000099;
 }
-.home .banner-slick .content p {
+body .home .banner-slick .content p {
+  font-size: 16px;
+  width: 70%;
   font-weight: 500;
   font-size: 20px;
   text-shadow: 1px 2px 4px black;
 }
-.home .banner-slick .slick-active .banner {
+body .home .banner-slick .slick-active .banner {
   transform: scale(1.5);
   transition: 40s;
 }
-.home .banner-slick .slick-active h1 {
+body .home .banner-slick .slick-active h1 {
   position: absolute;
   transition-duration: 1s;
   transition-delay: 0.5s;
   top: 33%;
+  text-align: center;
 }
-.home .banner-slick .slick-active p {
+body .home .banner-slick .slick-active p {
   position: absolute;
   transition-duration: 1s;
   transition-delay: 0.5s;
   top: 50%;
+  text-align: center;
 }
-.home .banner-slick .slick-active button {
+body .home .banner-slick .slick-active button {
   opacity: 1;
   background: white;
   border-radius: 50%;
 }
-.home .banner-slick .slick-dots {
+body .home .banner-slick .slick-dots {
   display: block;
   position: absolute;
   z-index: 15;
@@ -172,7 +173,7 @@ header .container ::before {
   transform: rotate(90deg);
   right: 0;
 }
-.home .banner-slick .slick-dots li {
+body .home .banner-slick .slick-dots li {
   width: 18px;
   height: 18px;
   background: #b1b1b1cc;
@@ -180,151 +181,164 @@ header .container ::before {
   color: transparent;
   margin-left: 30px;
 }
-.home .info {
+body .home .info {
   width: 50%;
   margin: 0 auto;
 }
-.home .info .box {
+body .home .info .box {
   background-image: url("../img/Frame.jpg");
   height: 350px;
   width: 25%;
-  margin-top: -150px;
+  margin-top: -7%;
   z-index: 1;
   padding: 0 3% 1% 1%;
   position: absolute;
 }
-.home .info .box h1 {
+body .home .info .box h1 {
   font-family: "Montserrat";
   font-weight: bold;
   color: white;
 }
-.home .info .box p {
+body .home .info .box p {
   height: 250px;
   font-family: "Montserrat";
   font-weight: 500;
   color: white;
 }
-.home .info img {
+body .home .info img {
   width: 25%;
   height: 350px;
   z-index: 1;
-  margin-top: -200px;
+  margin-top: -10%;
   position: absolute;
   right: 27%;
 }
-.home .projetos {
+body .home .projetos {
   margin-top: 300px;
 }
-.home .projetos .container {
+body .home .projetos .container {
   max-width: 1500PX;
 }
-.home .projetos .container hr {
+body .home .projetos .container hr {
   width: 90px;
   height: 2px;
   background: black;
   text-align: center;
   margin: 0 auto;
 }
-.home .projetos .container h1 {
+body .home .projetos .container h1 {
   font-family: "Montserrat";
   font-weight: bold;
   color: black;
   text-align: center;
 }
-.home .projetos .container .cada-projeto {
+body .home .projetos .container .cada-projeto {
   margin: 50px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.home .projetos .container .cada-projeto .box {
+body .home .projetos .container .cada-projeto .slick-list {
+  width: 100%;
+}
+body .home .projetos .container .cada-projeto .slick-list .slick-track {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body .home .projetos .container .cada-projeto .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 15px 50px;
   transition: 0.5s;
+  margin: 1%;
 }
-.home .projetos .container .cada-projeto .box hr {
+body .home .projetos .container .cada-projeto .box hr {
   width: 100%;
   height: 2px;
   background: black;
   margin: 22px auto;
 }
-.home .projetos .container .cada-projeto .box p {
+body .home .projetos .container .cada-projeto .box p {
   font-family: "Montserrat";
   font-weight: 500;
   color: black;
   text-align: center;
 }
-.home .projetos .container .cada-projeto .box:hover {
+body .home .projetos .container .cada-projeto .box:hover {
   box-shadow: 0px 0px 16px #0000005c;
   transition: 0.5s;
 }
-.home .galeria {
+body .home .galeria {
   background-image: linear-gradient(to right, #0d8fff, #0b85ef, #087cdf, #0572cf, #0369c0);
   padding: 50px 0;
 }
-.home .galeria .container hr {
+body .home .galeria .container hr {
   width: 90px;
   height: 2px;
   background: #ffffff;
   text-align: center;
   margin: 0 auto;
 }
-.home .galeria .container h1 {
+body .home .galeria .container h1 {
   font-family: "Montserrat";
   font-weight: bold;
   text-align: center;
   color: #ffffff;
 }
-.home .galeria .container .slick-galeria .cada-foto {
+body .home .galeria .container .slick-galeria .cada-foto {
   height: 350px;
   margin: 30px;
   transition: 9s;
   overflow: hidden;
   position: relative;
 }
-.home .galeria .container .slick-galeria .cada-foto img {
+body .home .galeria .container .slick-galeria .cada-foto img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 9s;
 }
-.home .galeria .container .slick-galeria .cada-foto :hover {
+body .home .galeria .container .slick-galeria .cada-foto :hover {
   transform: scale(1.3);
   transition: 9s;
 }
-.home .galeria .container .slick-galeria .slick-arrow {
+body .home .galeria .container .slick-galeria .slick-arrow {
   bottom: 43%;
 }
-.home .galeria .container .slick-galeria .slick-next {
+body .home .galeria .container .slick-galeria .slick-next {
   right: -60px;
 }
-.home .galeria .container .slick-galeria .slick-prev {
+body .home .galeria .container .slick-galeria .slick-prev {
   left: -60px;
 }
-.home .contato {
+body .home .contato {
   padding: 50px 0;
 }
-.home .contato hr {
+body .home .contato hr {
   width: 90px;
   height: 2px;
   background: #000;
   text-align: center;
   margin: 0 auto;
 }
-.home .contato h1 {
+body .home .contato h1 {
   font-family: "Montserrat";
   font-weight: bold;
   text-align: center;
   padding-bottom: 50px;
 }
-.home .contato .row {
+body .home .contato .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.home .contato .row .localizacao {
+body .home .contato .row iframe {
+  height: 450px;
+}
+body .home .contato .row .localizacao {
   position: relative;
   width: 40%;
   height: 450px;
@@ -332,12 +346,12 @@ header .container ::before {
   align-items: flex-end;
   justify-content: flex-end;
 }
-.home .contato .row .localizacao .fundo {
+body .home .contato .row .localizacao .fundo {
   width: 80%;
   height: 430px;
   background-color: #bbbbbb8c;
 }
-.home .contato .row .localizacao .local {
+body .home .contato .row .localizacao .local {
   position: absolute;
   width: 90%;
   height: 430px;
@@ -346,18 +360,18 @@ header .container ::before {
   background-image: linear-gradient(to right, #0d8fff, #0b85ef, #087cdf, #0572cf, #0369c0);
   padding: 7%;
 }
-.home .contato .row .localizacao .local h2 {
+body .home .contato .row .localizacao .local h2 {
   font-family: "Montserrat";
   font-weight: bold;
   color: #b1b1b1;
   margin: 30px 0;
 }
-.home .contato .row .localizacao .local p {
+body .home .contato .row .localizacao .local p {
   font-family: "Montserrat";
   font-weight: 500;
   color: #ffffff;
 }
-.home .contato .row .localizacao .local .btn-effect {
+body .home .contato .row .localizacao .local .btn-effect {
   border-top: 2px solid #ffffff;
   border-right: none;
   border-left: none;
@@ -372,19 +386,19 @@ header .container ::before {
   font-weight: 500;
   color: #ffffff;
 }
-.home .contato .row .localizacao .local .btn-effect .line-top-left, .home .contato .row .localizacao .local .btn-effect .line-bottom-right {
+body .home .contato .row .localizacao .local .btn-effect .line-top-left, body .home .contato .row .localizacao .local .btn-effect .line-bottom-right {
   position: absolute;
   width: 50%;
   height: 100%;
   top: 0;
 }
-.home .contato .row .localizacao .local .btn-effect .line-top-left {
+body .home .contato .row .localizacao .local .btn-effect .line-top-left {
   left: 0;
 }
-.home .contato .row .localizacao .local .btn-effect .line-bottom-right {
+body .home .contato .row .localizacao .local .btn-effect .line-bottom-right {
   right: 0;
 }
-.home .contato .row .localizacao .local .btn-effect .line-top-left:before {
+body .home .contato .row .localizacao .local .btn-effect .line-top-left:before {
   position: absolute;
   height: 0;
   width: 2px;
@@ -397,7 +411,7 @@ header .container ::before {
   transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition-delay: 0.3s;
 }
-.home .contato .row .localizacao .local .btn-effect .line-top-left:after {
+body .home .contato .row .localizacao .local .btn-effect .line-top-left:after {
   position: absolute;
   height: 2px;
   width: 0;
@@ -409,7 +423,7 @@ header .container ::before {
   -webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.home .contato .row .localizacao .local .btn-effect .line-bottom-right:after {
+body .home .contato .row .localizacao .local .btn-effect .line-bottom-right:after {
   position: absolute;
   height: 2px;
   width: 0;
@@ -421,7 +435,7 @@ header .container ::before {
   -webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.home .contato .row .localizacao .local .btn-effect .line-bottom-right:before {
+body .home .contato .row .localizacao .local .btn-effect .line-bottom-right:before {
   position: absolute;
   height: 0;
   width: 2px;
@@ -434,15 +448,15 @@ header .container ::before {
   transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition-delay: 0.3s;
 }
-.home .contato .row .localizacao .local .btn-effect:hover .line-top-left:before, .home .contato .row .localizacao .local .btn-effect:hover .line-bottom-right:before {
+body .home .contato .row .localizacao .local .btn-effect:hover .line-top-left:before, body .home .contato .row .localizacao .local .btn-effect:hover .line-bottom-right:before {
   height: 100%;
   transition-delay: 0s;
 }
-.home .contato .row .localizacao .local .btn-effect:hover .line-top-left:after, .home .contato .row .localizacao .local .btn-effect:hover .line-bottom-right:after {
+body .home .contato .row .localizacao .local .btn-effect:hover .line-top-left:after, body .home .contato .row .localizacao .local .btn-effect:hover .line-bottom-right:after {
   width: 100%;
   transition-delay: 0.15s;
 }
-.home .contato .row .localizacao .local .modal {
+body .home .contato .row .localizacao .local .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -454,7 +468,7 @@ header .container ::before {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.home .contato .row .localizacao .local .modal .conteudo-modal {
+body .home .contato .row .localizacao .local .modal .conteudo-modal {
   position: relative;
   background-image: linear-gradient(to right, #0d8fff, #0b85ef, #087cdf, #0572cf, #0369c0);
   margin: auto;
@@ -463,10 +477,10 @@ header .container ::before {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animatetop;
   animation-duration: 0.4s;
-  top: 25%;
+  top: 7%;
   padding: 50px 0;
 }
-.home .contato .row .localizacao .local .modal .conteudo-modal .close {
+body .home .contato .row .localizacao .local .modal .conteudo-modal .close {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -474,13 +488,13 @@ header .container ::before {
   margin-right: 30px;
   opacity: 0.7;
 }
-.home .contato .row .localizacao .local .modal .conteudo-modal .close:hover,
-.home .contato .row .localizacao .local .modal .conteudo-modal .close:focus {
+body .home .contato .row .localizacao .local .modal .conteudo-modal .close:hover,
+body .home .contato .row .localizacao .local .modal .conteudo-modal .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-.home .contato .row .localizacao .local .modal .conteudo-modal form {
+body .home .contato .row .localizacao .local .modal .conteudo-modal form {
   padding: 0 10%;
   width: 100%;
   display: flex;
@@ -488,37 +502,20 @@ header .container ::before {
   align-items: center;
   flex-wrap: wrap;
 }
-.home .contato .row .localizacao .local .modal .conteudo-modal form .form-group {
+body .home .contato .row .localizacao .local .modal .conteudo-modal form .form-group {
   position: relative;
   margin-bottom: 28px;
   font-family: "Montserrat";
   font-weight: 500;
 }
-.home .contato .row .localizacao .local .modal .conteudo-modal form .form-control-placeholder {
-  position: absolute;
-  top: 0;
-  padding: 7px 0 0 13px;
-  transition: all 200ms;
-  opacity: 1;
-  left: 0;
-  color: white;
-}
-.home .contato .row .localizacao .local .modal .conteudo-modal form .form-control:focus + .form-control-placeholder,
-.home .contato .row .localizacao .local .modal .conteudo-modal form .form-control:valid + .form-control-placeholder {
-  font-size: 86%;
-  transform: translate3d(0, -112%, 0);
-  opacity: 1;
-  background: transparent;
-  color: #ffffff;
-}
-.home .contato .row .localizacao .local .modal .conteudo-modal form input, .home .contato .row .localizacao .local .modal .conteudo-modal form textarea, .home .contato .row .localizacao .local .modal .conteudo-modal form select {
+body .home .contato .row .localizacao .local .modal .conteudo-modal form input, body .home .contato .row .localizacao .local .modal .conteudo-modal form textarea, body .home .contato .row .localizacao .local .modal .conteudo-modal form select {
   border: 1px solid #ffffff;
   padding: 10px;
   width: 100% !important;
   background-color: transparent;
   color: #ffffff;
 }
-.home .contato .row .localizacao .local .modal .conteudo-modal form button {
+body .home .contato .row .localizacao .local .modal .conteudo-modal form button {
   font-family: "Montserrat";
   font-weight: 500;
   background-color: transparent;
@@ -529,22 +526,21 @@ header .container ::before {
   border: 3px #ffffff solid;
   transition: 0.5s;
 }
-
-footer {
+body footer {
   background-image: linear-gradient(to right, #007fc2, #0074d9, #0065e9, #374df1, #7a12eb);
 }
-footer .container {
+body footer .container {
   max-width: 1000px;
 }
-footer .container .menu-footer {
+body footer .container .menu-footer {
   margin: 40px 0;
 }
-footer .container .menu-footer ul {
+body footer .container .menu-footer ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-footer .container .menu-footer ul li a {
+body footer .container .menu-footer ul li a {
   font-family: "Montserrat";
   font-weight: 500;
   color: white;
@@ -552,38 +548,418 @@ footer .container .menu-footer ul li a {
   position: relative;
   transition: 0.5s;
 }
-footer .container .menu-footer ul li a:hover {
+body footer .container .menu-footer ul li a:hover {
   font-weight: bold;
   transition: 0.5s;
 }
-footer .container .box {
+body footer .container .box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 0 40px;
 }
-footer .container .box img {
+body footer .container .box img {
   width: 30%;
   height: auto;
 }
-footer .container .box .redes-social {
+body footer .container .box .redes-social {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-footer .container .box .redes-social a {
+body footer .container .box .redes-social a {
   border-radius: 50%;
   border: 1px solid white;
   margin-left: 10px;
 }
-footer .container .box .redes-social a img {
+body footer .container .box .redes-social a img {
   width: 30px;
   height: 30px;
   padding: 6px;
 }
-footer .container .box .redes-social a:hover {
+body footer .container .box .redes-social a:hover {
   background-color: #0d8fff96;
   border-radius: 50%;
+}
+
+.menu-mobile {
+  display: none !important;
+}
+
+@media (max-width: 1367px) {
+  body .home .banner-slick .content h1 {
+    font-size: 53px;
+  }
+  body .home .info {
+    width: 60%;
+  }
+  body .home .info .box {
+    width: 30%;
+  }
+  body .home .info img {
+    width: 30%;
+    right: 21%;
+  }
+  body .home .galeria .container .slick-galeria .cada-foto {
+    height: 250px;
+    margin: 15px;
+  }
+  body .home .contato .row iframe {
+    height: 350px;
+  }
+  body .home .contato .row .localizacao {
+    height: 350px;
+  }
+  body .home .contato .row .localizacao .fundo {
+    height: 330px;
+  }
+  body .home .contato .row .localizacao .local {
+    height: 330px;
+    padding: 3%;
+  }
+  body .home .contato .row .localizacao .local .btn-effect {
+    margin-top: 30px;
+    padding: 8px 30px;
+  }
+}
+@media (max-width: 1025px) {
+  body .home .banner-slick .content h1 {
+    font-size: 30px;
+  }
+  body .home .banner-slick .content p {
+    font-size: 16px;
+  }
+  body .home .info {
+    width: 60%;
+  }
+  body .home .info .box {
+    width: 30%;
+  }
+  body .home .info .box h1 {
+    font-size: 30px;
+  }
+  body .home .info .box p {
+    font-size: 13px;
+  }
+  body .home .info img {
+    width: 30%;
+    right: 21%;
+  }
+  body .home .galeria .container .slick-galeria .cada-foto {
+    height: 250px;
+    margin: 15px;
+  }
+  body .home .galeria .container .slick-galeria .slick-arrow {
+    width: 21px;
+    height: 44px;
+  }
+  body .home .galeria .container .slick-galeria .slick-next {
+    right: -14px;
+  }
+  body .home .galeria .container .slick-galeria .slick-prev {
+    left: -26px;
+  }
+  body .home .contato .row iframe {
+    height: 350px;
+  }
+  body .home .contato .row .localizacao {
+    height: 350px;
+  }
+  body .home .contato .row .localizacao .fundo {
+    height: 330px;
+  }
+  body .home .contato .row .localizacao .local {
+    height: 330px;
+    padding: 3%;
+  }
+  body .home .contato .row .localizacao .local .btn-effect {
+    margin-top: 30px;
+    padding: 8px 30px;
+  }
+}
+@media (max-width: 801px) {
+  body .x-40 {
+    width: 100%;
+  }
+  body .x-55 {
+    width: 100%;
+  }
+  body .home {
+    min-width: 790px;
+  }
+  body .home .banner-slick .content h1 {
+    font-size: 30px;
+  }
+  body .home .banner-slick .content p {
+    font-size: 16px;
+  }
+  body .home .info {
+    min-width: 790px;
+    width: 80%;
+  }
+  body .home .info .box {
+    width: 40%;
+  }
+  body .home .info .box h1 {
+    font-size: 30px;
+  }
+  body .home .info .box p {
+    font-size: 13px;
+  }
+  body .home .info img {
+    width: 40%;
+    right: 12%;
+  }
+  body .home .projetos {
+    min-width: 790px;
+    margin-top: 326px;
+  }
+  body .home .galeria {
+    min-width: 790px;
+  }
+  body .home .galeria .container {
+    width: 700px;
+  }
+  body .home .galeria .container .slick-galeria .cada-foto {
+    height: 250px;
+    margin: 15px;
+  }
+  body .home .galeria .container .slick-galeria .slick-arrow {
+    width: 21px;
+    height: 44px;
+  }
+  body .home .galeria .container .slick-galeria .slick-next {
+    right: -14px;
+  }
+  body .home .galeria .container .slick-galeria .slick-prev {
+    left: -26px;
+  }
+  body .home .contato {
+    min-width: 790px;
+  }
+  body .home .contato .row iframe {
+    height: 350px;
+  }
+  body .home .contato .row .localizacao {
+    height: 350px;
+  }
+  body .home .contato .row .localizacao .fundo {
+    height: 330px;
+  }
+  body .home .contato .row .localizacao .local {
+    height: 330px;
+    padding: 3%;
+  }
+  body .home .contato .row .localizacao .local .btn-effect {
+    margin-top: 30px;
+    padding: 8px 30px;
+  }
+  body footer {
+    min-width: 790px;
+  }
+}
+@media (max-width: 601px) {
+  .menu-mobile {
+    display: initial !important;
+  }
+
+  body header {
+    min-width: 1px;
+  }
+  body header .container {
+    width: 100%;
+    position: fixed;
+    border-radius: 0;
+    top: 0;
+    z-index: 1;
+    flex-wrap: wrap;
+    right: 0;
+  }
+  body header .container a {
+    width: 50%;
+  }
+  body header .container a img {
+    width: 100%;
+    height: 100%;
+  }
+  body header .container .navbar-collapse {
+    display: none;
+  }
+  body header .container .redes-social {
+    margin-right: 5px;
+  }
+  body header .container .redes-social a img {
+    width: 24px;
+    height: 24px;
+  }
+  body header .container .menu-mobile {
+    width: 100%;
+    width: 100%;
+    padding: 0 5%;
+  }
+  body header .container .menu-mobile ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  body header .container .menu-mobile ul li a {
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: white;
+    padding: 15px 11%;
+  }
+  body .home {
+    min-width: 1px;
+  }
+  body .home .banner-slick .content h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  body .home .banner-slick .content p {
+    font-size: 16px;
+  }
+  body .home .banner-slick .slick-active .banner {
+    transform: scale(1.5);
+    transition: 40s;
+  }
+  body .home .banner-slick .slick-active h1 {
+    position: absolute;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    top: 36%;
+    letter-spacing: 0;
+  }
+  body .home .banner-slick .slick-active p {
+    position: absolute;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    top: 60%;
+    width: 70%;
+    text-align: center;
+    letter-spacing: 0;
+  }
+  body .home .banner-slick .slick-active button {
+    opacity: 1;
+    background: white;
+    border-radius: 50%;
+  }
+  body .home .banner-slick .slick-dots {
+    bottom: 10px;
+    transform: rotate(0deg);
+    right: 40%;
+    top: initial;
+  }
+  body .home .banner-slick .slick-dots li {
+    width: 9px;
+    height: 9px;
+    color: transparent;
+    margin-left: 15px;
+  }
+  body .home .banner-slick .slick-dots li button {
+    width: 9px;
+    height: 9px;
+  }
+  body .home .info {
+    min-width: 1px;
+    width: 100%;
+    margin-top: -21px;
+  }
+  body .home .info .box {
+    width: 100%;
+    margin: 0 auto;
+    position: initial;
+    padding: 5%;
+  }
+  body .home .info .box h1 {
+    font-size: 30px;
+  }
+  body .home .info .box p {
+    font-size: 13px;
+  }
+  body .home .info img {
+    width: 100%;
+    position: initial;
+    margin: 0 auto;
+  }
+  body .home .projetos {
+    min-width: 1px;
+    margin-top: 26px;
+  }
+  body .home .projetos .container .cada-projeto .slick-arrow {
+    width: 21px;
+    height: 44px;
+    font-size: 40px;
+    color: black;
+  }
+  body .home .projetos .container .cada-projeto .slick-next {
+    right: 0;
+  }
+  body .home .projetos .container .cada-projeto .slick-prev {
+    left: 0;
+  }
+  body .home .galeria {
+    min-width: 1px;
+  }
+  body .home .galeria .container {
+    width: auto;
+  }
+  body .home .galeria .container .slick-galeria {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body .home .galeria .container .slick-galeria .cada-foto {
+    height: 200px;
+    margin: 0;
+  }
+  body .home .galeria .container .slick-galeria .slick-arrow {
+    width: 21px;
+    height: 44px;
+    font-size: 40px;
+  }
+  body .home .galeria .container .slick-galeria .slick-next {
+    right: -36px;
+  }
+  body .home .galeria .container .slick-galeria .slick-prev {
+    left: -36px;
+  }
+  body .home .contato {
+    min-width: 1px;
+  }
+  body .home .contato .row {
+    flex-direction: column;
+  }
+  body .home .contato .row iframe {
+    width: 100%;
+    height: 350px;
+  }
+  body .home .contato .row .localizacao {
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+  }
+  body .home .contato .row .localizacao .fundo {
+    height: 330px;
+    width: 100%;
+  }
+  body .home .contato .row .localizacao .local {
+    height: 300px;
+    padding: 3%;
+    margin: 0 auto;
+    right: 2.5%;
+    top: 7%;
+  }
+  body .home .contato .row .localizacao .local .btn-effect {
+    margin-top: 30px;
+    padding: 8px 30px;
+  }
+  body .home .contato .row .localizacao .local .modal {
+    z-index: 99999;
+  }
+  body footer {
+    min-width: 1px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
